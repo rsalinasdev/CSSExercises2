@@ -1,0 +1,113 @@
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#original {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
+#transformado {
+  transform: rotate(180deg);
+}
+
+#transformadoX {
+  transform: rotateX(180deg);
+}
+
+#transformadoY {
+  transform: rotateY(180deg);
+}
+
+#transformadoZ {
+  transform: rotateZ(180deg);
+}
+
+#transformadoPersp {
+  transform: perspective(10000000px) rotateX(40deg) rotateY(-40deg) rotateZ(30deg);
+
+}
+
+
+
+
+.cubo {
+  font-size: 2em;
+  width: 6em;
+  height: 6em;
+  margin: 5em auto;
+  transform-style: preserve-3d;
+  perspective: 250px;
+  perspective-origin: center;
+}
+
+.cubo div{
+  position: absolute;
+  width: 6em;
+  height: 6em;
+  background: rgba(255,0,0,0.3);
+  border: 1px solid red;
+  color: black;
+  text-align: center;
+  line-height: 6em;
+}
+
+.front{
+  transform: translateZ(3em);
+}
+
+.back{
+  transform: rotateY(-180deg) translateZ(3em);
+}
+
+.right{
+  transform: rotateY(90deg) translateZ(3em);
+}
+
+.left{
+  transform: rotateY(-90deg) translateZ(3em);
+}
+
+.top{
+  transform: rotateX(90deg) translateZ(3em);
+}
+
+.bottom{
+  transform: rotateX(-90deg) translateZ(3em);
+}
+
+
+
+.cubo2 {
+  font-size: 2em;
+  width: 6em;
+  height: 6em;
+  margin: 5em auto;
+  transform-style: preserve-3d;
+  perspective: 250px;
+  perspective-origin: bottom;;
+}
+
+.side2 {
+  position: absolute;
+  width: 6em;
+  height: 6em;
+
+  background: rgba(255,0,0,0.3);
+  border: 1px solid black;
+
+  color: white;
+  text-align: center;
+  line-height: 6em;
+}
+
+.front2  { transform:                  translateZ(3em); }
+.top2    { transform: rotateX( 90deg)  translateZ(3em); }
+.right2  { transform: rotateY( 90deg)  translateZ(3em); }
+.left2   { transform: rotateY(-90deg)  translateZ(3em); }
+.bottom2 { transform: rotateX(-90deg)  translateZ(3em); }
+.back2   { transform: rotateY(-180deg) translateZ(3em); }

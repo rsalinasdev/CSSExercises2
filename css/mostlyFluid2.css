@@ -1,0 +1,62 @@
+body{
+  font-size: 2em;
+  font-family: 'Indie Flower';
+  text-align: center;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.container div {
+  box-sizing: border-box;
+}
+
+.c1{
+  width: 100%;
+  background: lightblue;
+}
+
+
+.c2{
+  width: 100%;
+  background: gray;
+}
+
+
+.c3{
+  width: 33.3%;
+  background: pink;
+}
+
+
+.c4{
+  width: 33.4%;
+  background: blue;
+}
+
+
+.c5{
+  width: 33.3%;
+  background: red;
+}
+
+@media (max-width:800px){
+  .c3, .c4, .c5{
+    color: red;
+    width: 50%;
+  }
+}
+
+
+@media (max-width:600px){
+  .c3, .c4, .c5{
+    color: white;
+    width: 100%;
+  }
+}

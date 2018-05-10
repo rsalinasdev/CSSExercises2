@@ -1,0 +1,45 @@
+body{
+  font-family: 'Indie Flower';
+  font-size: 1em;
+}
+
+
+h2{
+  font-size: 2em;
+}
+
+.contenedorPrincipal, .contenedorSecundario{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.contenedorPrincipal div{
+  padding: 10px;
+}
+
+.contenedorSecundario{
+  width: 75%;
+  background: lightblue;
+}
+
+
+.panelIzquierda{
+  width: 21%;
+  background: gray;
+}
+
+.topPanel{
+  width: 100%;
+  background: yellow;
+}
+
+.middlePanel{
+  width: 100%;
+  background: blue;
+}
+
+.bottomPanel{
+  width: 100%;
+  background: pink;
+}

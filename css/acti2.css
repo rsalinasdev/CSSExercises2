@@ -1,0 +1,59 @@
+img
+{
+    width: 300px;
+    height: 300px;
+}
+p
+{
+    font-size: 8px;
+}
+footer
+{
+    color: blue;
+}
+h2
+{
+    word-spacing: 300px;
+}
+
+@media print{
+  img  {
+      width: 100%;
+  }
+  h2
+  {
+      word-spacing: 0;
+  }
+}
+
+@media screen{
+  h2
+  {
+      word-spacing: 0;
+  }
+
+  body{
+    font-size: 2em;
+    font-family: verdana;
+    margin: 8%;
+    padding: 5%;
+  }
+
+  p{
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 0) and (max-width: 400px){
+  p{
+    color: white;
+    background: pink;
+  }
+}
+
+@media (min-width: 400px) and (max-width:800px){
+  p{
+    color: red;
+    text-decoration: underline;
+  }
+}
