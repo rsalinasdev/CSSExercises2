@@ -1,0 +1,102 @@
+body {
+	margin: 20px;
+	background-color: black;
+	color: white;
+	font-family: Raleway;
+}
+
+header h1{
+	text-align: center;
+}
+
+#contenido {
+	display: flex;
+	flex-direction: column;
+}
+
+#contenido > h1 {
+	padding: 10px;
+	text-align: center;
+}
+
+footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+img{
+	border: 2px solid white;
+	width: 250px;
+}
+
+.contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+
+#imagen1{
+  animation-name: anim1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes anim1{
+  from{
+    border: 1px solid black;
+  }
+
+  to{
+    border: 4px solid white;
+  }
+
+}
+
+
+#imagen2{
+  animation-name: anim2;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+
+@-webkit-keyframes anim2{
+
+  0%{
+    position: relative;
+    left: 0px;
+  }
+
+  50%{
+    position: relative;
+    left: 500px;
+  }
+
+  0%{
+    position: relative;
+    left: 0px;
+  }
+
+}
+
+
+
+#imagen3{
+  background: black;
+  transition-property: background;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+}
+
+#imagen3:hover{
+  background: white;
+}
